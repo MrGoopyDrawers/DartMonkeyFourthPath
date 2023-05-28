@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>DartMonkeyFourthPath</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <Nullable>enable</Nullable>
+        <AssemblyName>DartMonkeyFourthPath</AssemblyName>
+        <LangVersion>latest</LangVersion>
+        <Optimize>False</Optimize>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Icon.png" />
+    </ItemGroup>
+	<ItemGroup>
+		<Reference Include="PathsPlusPlus">
+			<HintPath>$(BloonsTD6)\Mods\PathsPlusPlus.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+    <Import Project="..\btd6.targets" />
+</Project>
